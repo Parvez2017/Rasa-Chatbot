@@ -1,0 +1,46 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - inform
+  - search_resturant
+  - thanks
+
+entities:
+  - location
+
+slots:
+  location:
+    type: text
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_cheer_up:
+    - "Cheers my friend!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_default:
+  - text: "I can help for Texas for now"
+
+  action_search_resturant:
+    - text: "shalaa"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
